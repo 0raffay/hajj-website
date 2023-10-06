@@ -25,15 +25,79 @@
         display: none;
     }
 
+
     .calculateMain .input__wrap.sm,
     .calculateMain .input__wrap {
         max-width: 100%;
         width: 100%;
     }
+
+    .package__tableMain  {
+        justify-content: center;
+    }
+    .package__tableMain .img__wrap {
+        display: none;
+    } 
+    .package__table .table__row:nth-of-type(1) {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .package__tableBody {
+        border-radius: 0 0 10px 10px;
+    }
+    .calculateFormWrap {
+        gap: 20px;
+        padding-inline: 20px;
+    }
+
+    .calculateMain .small__heading {
+        text-align: center;
+    }
+
+
 }
 
 @media only screen and (max-width: 992px) {
-    
+    br {
+        display: none;
+    }
+
+ 
+
+    .package__tableBody {
+        height: auto;
+    }
+
+    .package__list {
+        max-width: 100%;
+    }
+
+
+  
+    .package__tableBody  {
+        gap: 0;
+    }
+
+    .package__tableBody  .button__wrap {
+        margin-top: 20px;
+    }
+
+    .table__cell {
+        font-size: 26px;
+    }
+
+    .contactMain {
+        padding: 42px 0;
+        max-height: 100%;
+    }
+
+    .contactSection .form__wrap {
+        position: static;
+    }
+
+    .testimonialCard {
+        margin-inline: auto;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -42,9 +106,27 @@
         padding: 130px 0;
     }
 
-    
+    .package__tableBody {
+        padding: 30px;
+    }
+
+    .testimonialSection .arrowsContainer {
+        justify-content: center;
+        gap: 20px;
+        bottom: -20px;
+        top: unset;
+        height: max-content;
+    }
+
+    .testimonialCardText {
+        padding: 30px 20px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
+    .table__cell {
+        font-size: 24px;
+    }
+
 
 }
