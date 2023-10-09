@@ -14,7 +14,7 @@
     <!--==== HEADER STYLES START ====-->
     <?php include('includes/header-styles.php') ?>
     <!--==== HEADER STYLES END ====-->
-    <title>Home</title>
+    <title>Home | <?php echo $webName; ?></title>
 </head>
 
 <body>
@@ -79,7 +79,7 @@
     <section class="panelSection">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-4 col-sm-12">
+                <div class="col-lg-6 col-md-4 col-sm-12 mb-20">
                     <div class="img__wrap">
                         <img src="assets/images/home-1.png" alt="">
                     </div>
@@ -276,7 +276,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-20">
                     <div class="serviceCard">
                         <div class="img__wrap">
                             <img src="assets/images/health-icon.png" alt="">
@@ -285,7 +285,7 @@
                         <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-20">
                     <div class="serviceCard">
                         <div class="img__wrap">
                             <img src="assets/images/health-icon.png" alt="">
@@ -294,7 +294,7 @@
                         <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-20">
                     <div class="serviceCard">
                         <div class="img__wrap">
                             <img src="assets/images/health-icon.png" alt="">
@@ -331,7 +331,14 @@
                                 <div class="row">
                                     <div class="col-lg-6 col-sm-12">
                                         <label for="title">Title <span>*</span> </label>
-                                        <input type="text" name="title" id="title">
+                                        <div class="cs__selectMain">
+                                            <input class="cs__selectInput" initialValue="" data-cus-select value="" placeholder='' readonly>
+                                            <div class="cs__selectDropDown" data-cus-select-dropdown>
+                                                <span data-cus-select-item>Mr.</span>
+                                                <span data-cus-select-item>Mrs.</span>
+                                                <span data-cus-select-item>Miss</span>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-lg-6 col-sm-12">
                                         <label for="fullName">Full Name <span>*</span> </label>
@@ -446,14 +453,14 @@
     <section class="weatherSection">
         <div class="custom--container">
             <div class="row align-items-center">
-                <div class="col-lg-5 pr-4 pl-0">
+                <div class="col-lg-5 col-md-12 pr-4 pl-0 pr-md-0">
                     <div class="weatherSectionText">
                         <h6 class="section__label">Weather Update</h6>
                         <h4 class="section__heading">Latest Weather Update</h4>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                     </div>
                 </div>
-                <div class="col-lg-7 pl-5">
+                <div class="col-lg-7 col-md-12 pl-5 ">
                     <div class="weatherSlider">
                         <div class="item">
                             <div class="weatherCards">
@@ -478,15 +485,15 @@
                                 <img src="assets/images/makkah.png" alt="">
                                 <div class="weatherCardText">
                                     <h4 class="section__heading clr-accent">
-                                        Makkah Climate Update
+                                        Madinah Climate Update
                                     </h4>
                                     <div class="dateTime">
                                         <span class="border-right">Friday 9th September</span>
-                                        <span>Local Time: 09:01</span>
+                                        <span>Local Time: 10:01</span>
                                     </div>
                                     <div class="temperature d-flex align-items-center">
                                         <img class="mr-4" src="assets/images/cloud-icon.png" alt="">
-                                        <span>27 °C</span>
+                                        <span>20 °C</span>
                                     </div>
                                 </div>
                             </div>
@@ -501,6 +508,125 @@
         </div>
     </section>
     <!--==== WEATHER SECTION END ====-->
+
+
+    <!--==== GALLERY SECTION START ====-->
+    <section class="gallerySection ">
+        <div class="blue__area">
+            <div class="section__text text-center">
+                <h4 class="section__heading clr-accent">Our Gallery</h4>
+                <p class="clr-accent">Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum has been the industry's standard dummy <br> text ever since the 1500s,</p>
+            </div>
+            <div class="container custom--container">
+                <div class="position-relative">
+                    <div class="gallerySlider">
+                        <div class="item">
+                            <div class="galleryCards">
+                                <img src="assets/images/gallery-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="galleryCards">
+                                <img src="assets/images/gallery-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="galleryCards">
+                                <img src="assets/images/gallery-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="galleryCards">
+                                <img src="assets/images/gallery-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrowsContainer">
+                        <button class="prev"><i class="ri-arrow-left-line"></i></button>
+                        <button class="next" style="display: none;"><i class="ri-arrow-right-line"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==== GALLERY SECTION END ====-->
+
+
+    <!--==== BLOG SECTION START ====-->
+    <section class="blogSection">
+        <div class="grey__main">
+            <div class="container text-center">
+                <div class="section__text small">
+                    <h6 class="section__label">Latest Blogs</h6>
+                    <h4 class="section__heading">Blogs/News Update</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                </div>
+
+                <div class="blogSlider">
+                    <div class="item">
+                        <div class="blogCards">
+                            <div class="img__wrap">
+                                <img src="assets/images/blog-1.png" alt="">
+                            </div>
+                            <div class="blogCardText">
+                                <h6 class="blog__title">Why Choose Us for Your Hajj Arrangements? </h6>
+                                <p class="blog__excerpt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="javascript:;" class="blog__button">Read More <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blogCards">
+                            <div class="img__wrap">
+                                <img src="assets/images/blog-1.png" alt="">
+                            </div>
+                            <div class="blogCardText">
+                                <h6 class="blog__title">Why Choose Us for Your Hajj Arrangements? </h6>
+                                <p class="blog__excerpt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="javascript:;" class="blog__button">Read More <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blogCards">
+                            <div class="img__wrap">
+                                <img src="assets/images/blog-1.png" alt="">
+                            </div>
+                            <div class="blogCardText">
+                                <h6 class="blog__title">Why Choose Us for Your Hajj Arrangements? </h6>
+                                <p class="blog__excerpt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="javascript:;" class="blog__button">Read More <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="blogCards">
+                            <div class="img__wrap">
+                                <img src="assets/images/blog-1.png" alt="">
+                            </div>
+                            <div class="blogCardText">
+                                <h6 class="blog__title">Why Choose Us for Your Hajj Arrangements? </h6>
+                                <p class="blog__excerpt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <a href="javascript:;" class="blog__button">Read More <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="arrowsContainer">
+            <button class="prev"><i class="ri-arrow-left-line"></i></button>
+            <button class="next"><i class="ri-arrow-right-line"></i></button>
+        </div>
+    </section>
+    <!--==== BLOG SECTION END ====-->
+
+
+    <!--==== PERFORM SECTION START ====-->
+    <?php include("sections/perform-section.php") ?>
+    <!--==== PERFORM SECTION END ====-->
+
 
     <!--==== FOOTER START ====-->
     <?php include('includes/footer.php') ?>

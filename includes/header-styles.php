@@ -6,6 +6,9 @@
 
 <!--==== OFINFO START ====-->
 <?php
+
+$webName = "Al Hajj";
+
 $site__email='';
 $site__phone='';
 

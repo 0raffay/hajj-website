@@ -6,15 +6,15 @@
             </div>
             <nav class="flex-1">
                 <ul class="nav__list">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Hajj</a></li>
-                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="contact.php">Hajj</a></li>
+                    <li><a href="testimonials.php">Testimonials</a></li>
                     <li><a href="#">Media</a></li>
                 </ul>
             </nav>
             <div class="button__wrap">
-                <a href="#" class="btn btn-primary">Donate Now</a>
+                <a href="register.php" class="btn btn-primary">Donate Now</a>
             </div>
             <div class="burgerButton">
                 <div></div>
@@ -50,10 +50,10 @@
 
             <a href="attractions">Hajj</a>
             <ul class="mobile--submenu">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Hajj</a></li>
-                <li><a href="#">Testimonials</a></li>
+                <li><a href="contact.php">Hajj</a></li>
+                <li><a href="testimonials.php">Testimonials</a></li>
                 <li><a href="#">Media</a></li>
             </ul>
         </li>

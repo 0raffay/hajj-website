@@ -1,6 +1,15 @@
 @media only screen and (max-width: 1660px) {
-    
+
+    .custom--container {
+        max-width: 80%;
+    }
+
+    .newsletterMain::before {
+        max-width: 100%;
+        border-radius: 0;
+    }
 }
+
 @media only screen and (max-width: 1380px) {
     .bannerSideImg {
         z-index: 1;
@@ -18,13 +27,36 @@
         background: rgba(0, 0, 0, .7);
         z-index: 2;
     }
+
+    .custom--container {
+        max-width: 87%;
+    }
+
+    .weatherSection .arrowsContainer {
+        top: unset;
+        bottom: 0;
+    }
 }
 
 @media only screen and (max-width: 1240px) {
+
+    .galleryCards {
+        margin-right: 0;
+    }
+
+    .galleryCards img {
+        display: block;
+        margin-inline: auto;
+    }
+
     .calulateLoader {
         display: none;
     }
 
+    .custom--container {
+        max-width: 940px;
+        margin-inline: auto;
+    }
 
     .calculateMain .input__wrap.sm,
     .calculateMain .input__wrap {
@@ -32,12 +64,14 @@
         width: 100%;
     }
 
-    .package__tableMain  {
+    .package__tableMain {
         justify-content: center;
     }
+
     .package__tableMain .img__wrap {
         display: none;
-    } 
+    }
+
     .package__table .table__row:nth-of-type(1) {
         border-radius: 10px 10px 0 0;
     }
@@ -45,6 +79,7 @@
     .package__tableBody {
         border-radius: 0 0 10px 10px;
     }
+
     .calculateFormWrap {
         gap: 20px;
         padding-inline: 20px;
@@ -52,6 +87,11 @@
 
     .calculateMain .small__heading {
         text-align: center;
+    }
+
+    .testimonialSection .arrowsContainer {
+        top: unset;
+        bottom: 100px;
     }
 
 
@@ -62,7 +102,26 @@
         display: none;
     }
 
- 
+    .custom--container {
+        max-width: 720px;
+    }
+    .gallerySection .arrowsContainer {
+        left: 0;
+        bottom: -100px;
+        top: unset;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .gallerySection .arrowsContainer button.next {
+        display: flex !important;
+    }
+
+    .gallerySection .section__text {
+        max-width: 385px;
+        width: 100%;
+        margin-inline: auto;
+    }
 
     .package__tableBody {
         height: auto;
@@ -73,12 +132,12 @@
     }
 
 
-  
-    .package__tableBody  {
+
+    .package__tableBody {
         gap: 0;
     }
 
-    .package__tableBody  .button__wrap {
+    .package__tableBody .button__wrap {
         margin-top: 20px;
     }
 
@@ -98,9 +157,38 @@
     .testimonialCard {
         margin-inline: auto;
     }
+
+    .weatherSectionText {
+        margin: 20px auto;
+    }
+
+    .contactFormSection {
+        position: static;
+        padding: var(--section-padding) !important;
+    }
+
+    .mainContactForm {
+        padding: 40px 20px;
+    }
+
+    .pageBanner {
+        --_min-height: auto !important;
+    }
+
+    .faqTabbingButton button {
+        margin-inline: auto;
+    }
+
+    .faqMain {
+        padding-inline: 40px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
+
+    .contactSection .form__wrap {
+        padding: 20px 20px;
+    }
     .bannerWithImage {
         min-height: auto;
         padding: 130px 0;
@@ -110,6 +198,7 @@
         padding: 30px;
     }
 
+    .blogSection .arrowsContainer,
     .testimonialSection .arrowsContainer {
         justify-content: center;
         gap: 20px;
@@ -121,12 +210,80 @@
     .testimonialCardText {
         padding: 30px 20px;
     }
+
+    .custom--container {
+        max-width: 540px;
+    }
+
+    .weatherSection .col-md-12 {
+        padding: 0 !important;
+        padding-block: 0 !important;
+        padding-inline: 15px !important;
+    }
+
+    .footer__ctaInfo,
+    .footer__list {
+        flex-direction: column;
+        border: none;
+    }
+
+    .footer__ctaInfo * {
+        border-right: none !important;
+        padding-inline: 0;
+    }
+
+    .gallerySection .container {
+        padding: 0 15px !important;
+    }
 }
 
 @media only screen and (max-width: 480px) {
+
+    :root {
+        --section-padding: 40px 0;
+        --fs-55: 35px;
+        --fs-45: 30px;
+        --fs-24: 21px;
+        --fs-18: 17px;
+        --fs-16: 15px;
+    }
+
+    .faqMain {
+        padding-inline: 20px;
+    } 
+
+    .faqMain .accodion__button i {
+        font-size: 23px;
+    }
+
     .table__cell {
         font-size: 24px;
     }
 
+    .weatherCardText {
+        bottom: 20px;
+        left: 20px;
+    }
 
+    .weatherCardText .section__heading {
+        font-size: 28px;
+        line-height: 1.5;
+    }
+
+    .temperature span {
+        font-size: 32px;
+    }
+    .weatherSection .arrowsContainer {
+        bottom: -10px;
+        padding-right: 10px;
+    }
+
+    .performCard {
+        padding: 40px;
+    }
+
+    .newsletterInput button {
+        max-width: 120px;
+        font-size: var(--fs-18);
+    }
 }
