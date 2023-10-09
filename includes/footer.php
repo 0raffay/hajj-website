@@ -32,10 +32,10 @@
 
             <div class="col-lg-12">
                 <ul class="footer__list">
-                    <li><a href="javascript:;">About Us</a></li>
-                    <li><a href="javascript:;">Packages</a></li>
-                    <li><a href="javascript:;">Contact us</a></li>
-                    <li><a href="javascript:;">Testimonials</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="packages.php">Packages</a></li>
+                    <li><a href="contact.php">Contact us</a></li>
+                    <li><a href="testimonial.php">Testimonials</a></li>
                 </ul>
             </div>
 
@@ -43,11 +43,11 @@
                 <div class="footer__ctaInfo">
                     <div class="border-right">
                         <h6>Call Us</h6>
-                        <a href="javacript:;">031646+5819529</a>
+                        <a href="<?php echo $site__phone;?>"><?php echo $site__phone;?></a>
                     </div>
                     <div>
-                        <h6>Call Us</h6>
-                        <a href="javacript:;">031646+5819529</a>
+                        <h6>Contact Us</h6>
+                        <a href="<?php echo $site__email;?>"><?php echo $site__email;?></a>
                     </div>
                 </div>
             </div>

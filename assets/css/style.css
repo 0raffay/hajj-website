@@ -844,24 +844,35 @@ header nav {
 .calculateFormWrap .calculatedAmount input {
     background: var(--clr-primary-300);
     pointer-events: none;
-    color: #FFF;
+    background: #3466AA;
     box-shadow: 0px 4px 4px 0px rgba(64, 127, 217, 0.40);
+}
+
+.calculateFormWrap input[type="number"] {
+    color: #A9A9A9;
+    font-size: var(--fs-22);
+    font-weight: 500;
+    line-height: normal;
+}
+
+.text-right {
+    text-align: right;
 }
 
 .calculateFormWrap label {
     color: var(--fc-neutral-700);
     font-size: var(--fs-18);
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
     margin-bottom: 7px;
 }
 
 .calulateLoader {
-    visibility: hidden;
+    animation-play-state: paused;
 }
 
 .calulateLoader.active {
-    visibility: visible;
+    animation-play-state: running;
 }
 
 /**==== CALUCLATE SECTION END ====*/
@@ -1567,12 +1578,14 @@ footer {
     line-height: normal;
 }
 
+[data-cus-select-item]:focus,
 [data-cus-select-item].selected,
 [data-cus-select-item]:hover {
     background: var(--activeOptionBg);
     /* border-bottom: var(--activeOptionBorder); */
     color: var(--activeOptionClr);
     font-weight: 800;
+    outline: none;
 }
 
 /* CUSTOM SELECT CSS END*/
@@ -1776,7 +1789,7 @@ footer {
 
 .faqTabbingButton button {
     padding: 13px 0;
-    border-radius: 10px;    
+    border-radius: 10px;
     background: #FAFAFA;
     max-width: 275px;
     width: 100%;
@@ -1798,3 +1811,179 @@ footer {
 
 /**==== ACCORDION CSS END ====*/
 /**==== FAQ END ====*/
+
+
+/**==== CONDITION SECTION START ====*/
+.conditionText p,
+.conditionText li {
+    color: #646363;
+    font-size: var(--fs-16);
+    font-weight: 400;
+    line-height: normal;
+}
+
+.conditionText li {
+    margin-bottom: 10px;
+    text-wrap: wrap;
+}
+
+.conditionText ol {
+    padding-left: 19px;
+}
+
+/**==== CONDITION SECTION END ====*/
+
+
+/**==== AWARD SECTION START ====*/
+.awardCards {
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+    background: #FFF;
+    /* min-height: 267px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    max-width: 253.114px;
+    ;
+    width: 100%;
+    position: relative;
+}
+
+.awardCards::after {
+    content: "";
+    border-radius: 0px 0px 10px 10px;
+    border: 2px solid var(--clr-primary);
+    background: var(--clr-primary);
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    transform: scaleY(0);
+    transition: all 300ms ease;
+    transform-origin: bottom;
+}
+
+
+
+.awardCards,
+.awardCards *,
+.item:has(.awardCards) {
+    transition: all 250ms ease;
+
+}
+
+.awardCards .img__wrap {
+    margin-bottom: 15px;
+}
+
+.awardCards img {
+    object-fit: cover;
+    height: 120px;
+    width: 120px;
+}
+
+.awardsSlider .awardCards {
+    position: relative;
+    text-align: center;
+    transition: all .4s ease;
+    transform: scale(.7);
+}
+
+.awardsSlider .slick-dots {
+    bottom: -50px;
+}
+
+.awardsSlider .slick-slide.slick-center .awardCards {
+    z-index: 1;
+    transform: scale(1);
+    min-height: 267px;
+    padding-block: 0;
+}
+
+.awardsSlider .slick-slide.slick-center .awardCards::after {
+    transform: scaleY(1);
+}
+
+.awardsSlider .slick-slide.slick-center .awardCards img {
+    height: 154px;
+    width: 154px;
+}
+
+.awardsSlider .slick-track {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.awardsSlider .slick-slide.leftMost .awardCards,
+.awardsSlider .slick-slide.rightMost .awardCards {
+    transform: scale(.7);
+}
+
+.awardsSlider .slick-slide.left {
+    transform: translateX(2%);
+}
+
+.awardsSlider .slick-slide.right {
+    transform: translateX(-2%);
+}
+
+.awardsSlider .slick-slide.leftMost {
+    transform: translateX(20%);
+}
+
+.awardsSlider .slick-slide.rightMost {
+    transform: translateX(-20%);
+}
+
+.awardsSlider .slick-slide.left .awardCards,
+.awardsSlider .slick-slide.right .awardCards {
+    transform: scale(.9);
+}
+
+/**==== AWARD SECTION END ====*/
+
+
+/**==== LIST SECTION START ====*/
+.list__wrapper {
+    width: 100%;
+}
+
+.listText {
+    padding: 51px 116px 51px 58px;
+    width: 665px;
+    border-radius: 10px;
+    background: #FAFAFA;
+
+    position: absolute;
+    left: -150px;
+    top: 40px;
+}
+
+.listText ul {
+    padding-left: 40px;
+}
+
+.listText li {
+    color: #646363;
+    font-size: var(--fs-16);
+    font-weight: 400;
+    list-style: none;
+    line-height: normal;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.listText li::before {
+    content: url(../images/grey-check.png);
+    position: absolute;
+    left: -40px;
+    top: 2px;
+}
+
+/**==== LIST SECTION END ====*/

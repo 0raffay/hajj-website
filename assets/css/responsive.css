@@ -94,6 +94,13 @@
         bottom: 100px;
     }
 
+    .listText {
+        position: static;
+        max-width: 668px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 40px;
+    }
 
 }
 
@@ -198,6 +205,11 @@
         padding: 30px;
     }
 
+    .awardsSlider .awardCards  {
+        display: none;
+    }
+    
+    .ourAwardsSection .arrowsContainer,
     .blogSection .arrowsContainer,
     .testimonialSection .arrowsContainer {
         justify-content: center;
@@ -273,6 +285,7 @@
     .temperature span {
         font-size: 32px;
     }
+    .ourAwardsSection .arrowsContainer,
     .weatherSection .arrowsContainer {
         bottom: -10px;
         padding-right: 10px;

@@ -9,8 +9,8 @@
 
 $webName = "Al Hajj";
 
-$site__email='';
-$site__phone='';
+$site__email='hajj@contact.com';
+$site__phone='+03164819529';
 
 
 $site__name = '';

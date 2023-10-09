@@ -7,7 +7,7 @@
             <nav class="flex-1">
                 <ul class="nav__list">
                     <li><a href="index.php">Home</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="about.php">About Us</a></li>
                     <li><a href="contact.php">Hajj</a></li>
                     <li><a href="testimonials.php">Testimonials</a></li>
                     <li><a href="#">Media</a></li>

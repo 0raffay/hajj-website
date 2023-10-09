@@ -41,64 +41,64 @@
                         <div class="row">
                             <div class="col-lg-4 mb-30 col-sm-12">
                                 <label>Lead Name <span>*</span></label>
-                                <input type="text" placeholder="Title">
+                                <input required type="text" placeholder="Title">
                             </div>
                             <div class="col-lg-4 mb-30 col-sm-12">
                                 <label style="display: block; min-height: 24px;"></label>
-                                <input type="text" placeholder="First">
+                                <input required type="text" placeholder="First">
                             </div>
                             <div class="col-lg-4 mb-30 col-sm-12">
                                 <label style="display: block; min-height: 24px;"></label>
-                                <input type="text" placeholder="Last">
+                                <input required type="text" placeholder="Last">
                             </div>
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <label>Your Telephone <span>*</span></label>
-                                <input type="number" placeholder="+92">
+                                <input required type="number" placeholder="+92">
                             </div>
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <label>Your Email <span>*</span></label>
-                                <input type="email">
+                                <input required type="email">
                             </div>
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <label>Adult Travelers <span>*</span></label>
                                 <div class="cs__selectMain">
-                                    <input class="cs__selectInput" initialValue="" data-cus-select value="" placeholder='' readonly>
+                                    <input required class="cs__selectInput" initialValue="" data-cus-select value="" placeholder='' >
                                     <div class="cs__selectDropDown" data-cus-select-dropdown>
-                                        <span data-cus-select-item>1</span>
-                                        <span data-cus-select-item>2</span>
-                                        <span data-cus-select-item>3</span>
+                                        <span  tabindex="0" role="button" aria-pressed="false" data-cus-select-item data-cus-select-item>1</span>
+                                        <span  tabindex="0" role="button" aria-pressed="false" data-cus-select-item data-cus-select-item>2</span>
+                                        <span  tabindex="0" role="button" aria-pressed="false" data-cus-select-item data-cus-select-item>3</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <label>Child Travelers <span>*</span></label>
                                 <div class="cs__selectMain">
-                                    <input class="cs__selectInput" initialValue="" data-cus-select value="" placeholder='' readonly>
+                                    <input required class="cs__selectInput" initialValue="" data-cus-select value="" placeholder='' >
                                     <div class="cs__selectDropDown" data-cus-select-dropdown>
-                                        <span data-cus-select-item>1</span>
-                                        <span data-cus-select-item>2</span>
-                                        <span data-cus-select-item>3</span>
+                                        <span  tabindex="0" role="button" aria-pressed="false" data-cus-select-item data-cus-select-item>1</span>
+                                        <span  tabindex="0" role="button" aria-pressed="false" data-cus-select-item data-cus-select-item>2</span>
+                                        <span  tabindex="0" role="button" aria-pressed="false" data-cus-select-item data-cus-select-item>3</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <label>Departure Country <span>*</span></label>
                                 <div class="cs__selectMain">
-                                    <input class="cs__selectInput" initialValue="" data-cus-select value="" placeholder='' readonly>
+                                    <input required class="cs__selectInput" initialValue="" data-cus-select value="" placeholder='' >
                                     <div class="cs__selectDropDown" data-cus-select-dropdown>
-                                        <span data-cus-select-item>1</span>
-                                        <span data-cus-select-item>2</span>
-                                        <span data-cus-select-item>3</span>
+                                        <span  tabindex="0" role="button" aria-pressed="false" data-cus-select-item data-cus-select-item>1</span>
+                                        <span  tabindex="0" role="button" aria-pressed="false" data-cus-select-item data-cus-select-item>2</span>
+                                        <span  tabindex="0" role="button" aria-pressed="false" data-cus-select-item data-cus-select-item>3</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <label>Departure City /​ Airport <span>*</span></label>
-                                <input type="text">
+                                <input required type="text">
                             </div>
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <label>I’m interested in <span>*</span></label>
-                                <input type="text">
+                                <input required type="text">
                             </div>
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <div class="button__wrap">

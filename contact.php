@@ -40,38 +40,38 @@
                         <div class="row mb-40">
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <label>Your Name <span>*</span></label>
-                                <input type="text">
+                                <input required type="text">
                             </div>
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <label>Department <span>*</span></label>
                                 <div class="cs__selectMain">
-                                    <input class="cs__selectInput" initialValue="" data-cus-select value="" placeholder='' readonly>
+                                    <input required title="Select From The Options Below:" class="cs__selectInput" readonly initialValue="" value="" data-cus-select placeholder=''>
                                     <div class="cs__selectDropDown" data-cus-select-dropdown>
-                                        <span data-cus-select-item>General</span>
-                                        <span data-cus-select-item>Hajj</span>
-                                        <span data-cus-select-item>Umrah</span>
+                                        <span tabindex="0" role="button" aria-pressed="false" data-cus-select-item>General</span>
+                                        <span tabindex="0" role="button" aria-pressed="false" data-cus-select-item>Hajj</span>
+                                        <span tabindex="0" role="button" aria-pressed="false" data-cus-select-item>Umrah</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <label>Adult Traveler<span>*</span></label>
-                                <input type="text">
+                                <input required type="text">
                             </div>
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <label>Child Travelers <span>*</span></label>
-                                <input type="text">
+                                <input required type="text">
                             </div>
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <label>Your Telephone <span>*</span></label>
-                                <input type="number">
+                                <input required type="number">
                             </div>
                             <div class="col-lg-6 mb-30 col-sm-12">
                                 <label>Your Email <span>*</span></label>
-                                <input type="email">
+                                <input required type="email">
                             </div>
                             <div class="col-lg-12">
                                 <label for="">Your Message <span>*</span></label>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <textarea required name="" id="" cols="30" rows="10"></textarea>
                             </div>
                         </div>
                         <div class="button__wrap">
